@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org/DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.geekbyte.springcloud.dao.DeptDao">
+    <insert id="addDept" parameterType="Dept">
+        INSERT INTO dept (name,db_source)
+        VALUES (#{name},DATABASE());
+    </insert>
+
+    <select id="queryById" resultType="Dept" parameterType="Long">
+        SELECT * FROM dept WHERE dept_no = #{deptNo};
+    </select>
+
+    <select id="queryAll" resultType="Dept">
+        SELECT * FROM dept;
+    </select>
+
+</mapper>
