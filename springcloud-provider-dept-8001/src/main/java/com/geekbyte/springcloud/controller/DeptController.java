@@ -28,7 +28,7 @@ public class DeptController {
     }
 
     @GetMapping("/dept/list")
-    public List<Dept> querAll() {
+    public List<Dept> queryAll() {
         return deptService.queryAll();
     }
 }
