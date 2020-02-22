@@ -9,13 +9,20 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>springcloud-consumer-dept-8000</artifactId>
+    <artifactId>springcloud-consumer-dept-feign</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>com.geekbyte</groupId>
             <artifactId>springcloud-api</artifactId>
             <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <!--Feign-->
+        <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-feign -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-feign</artifactId>
+            <version>1.4.7.RELEASE</version>
         </dependency>
         <!--Ribbon-->
         <!-- https://mvnrepository.com/artifact/com.netflix.ribbon/ribbon -->
@@ -24,7 +31,6 @@
             <artifactId>ribbon</artifactId>
             <version>2.7.17</version>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>

@@ -1,6 +1,6 @@
 package com.geekbyte.springcloud.dao;
 
-import com.geekbyte.springcloud.Entity.Dept;
+import com.geekbyte.springcloud.entity.Dept;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 

@@ -1,6 +1,6 @@
 package com.geekbyte.springcloud.service;
 
-import com.geekbyte.springcloud.Entity.Dept;
+import com.geekbyte.springcloud.entity.Dept;
 import com.geekbyte.springcloud.dao.DeptDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

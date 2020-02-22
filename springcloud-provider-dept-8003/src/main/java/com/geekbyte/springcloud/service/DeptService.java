@@ -1,6 +1,6 @@
 package com.geekbyte.springcloud.service;
 
-import com.geekbyte.springcloud.Entity.Dept;
+import com.geekbyte.springcloud.entity.Dept;
 
 import java.util.List;
 

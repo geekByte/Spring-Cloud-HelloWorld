@@ -1,4 +1,4 @@
-package com.geekbyte.springcloud.Entity;
+package com.geekbyte.springcloud.entity;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

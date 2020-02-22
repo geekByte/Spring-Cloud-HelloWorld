@@ -1,6 +1,6 @@
 package com.geekbyte.springcloud.controller;
 
-import com.geekbyte.springcloud.Entity.Dept;
+import com.geekbyte.springcloud.entity.Dept;
 import com.geekbyte.springcloud.service.DeptService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
