@@ -18,6 +18,19 @@
             <artifactId>springcloud-api</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <!--服务提供者-->
+        <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-eureka -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-eureka</artifactId>
+            <version>1.4.7.RELEASE</version>
+        </dependency>
+        <!--看一些监控的信息 info-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
 
         <!--junit-->
         <dependency>

@@ -9,24 +9,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>springcloud-consumer-dept-8002</artifactId>
+    <artifactId>springcloud-eureka-7001</artifactId>
 
     <dependencies>
-        <dependency>
-            <groupId>com.geekbyte</groupId>
-            <artifactId>springcloud-api</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <!--热部署工具-->
-        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-devtools -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-        </dependency>
         <!--Euraka插件-->
         <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-eureka-server -->
         <dependency>
@@ -34,7 +19,12 @@
             <artifactId>spring-cloud-starter-eureka-server</artifactId>
             <version>1.4.7.RELEASE</version>
         </dependency>
+        <!--热部署工具-->
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-devtools -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+        </dependency>
     </dependencies>
-
 
 </project>

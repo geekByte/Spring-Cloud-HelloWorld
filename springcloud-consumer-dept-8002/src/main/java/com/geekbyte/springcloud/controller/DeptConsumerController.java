@@ -20,7 +20,9 @@ public class DeptConsumerController {
     @Autowired
     private RestTemplate restTemplate;  //提供多种便捷访问远程http服务的方法,简单的Restful服务模板
 
-    private static final String REST_URL_PREFIX = "http://localhost:8001";
+    //通过Ribbon实现的时候,这里的地址应该是一个变量,这个变量应该是服务名(即服务ID),我们通过服务名去访问
+//    private static final String REST_URL_PREFIX = "http://localhost:8001";
+    private static final String REST_URL_PREFIX = "http://SPRINGCLOUD-PROVIDER-DEPT";
 
     @RequestMapping("/consumer/dept/add")
     public Boolean addDept(Dept dept) {
@@ -32,7 +34,7 @@ public class DeptConsumerController {
         return restTemplate.getForObject(REST_URL_PREFIX + "/dept/get/" + id,Dept.class);
     }
 
-    @RequestMapping("/consumer/list")
+    @RequestMapping("/consumer/dept/list")
     public List<Dept> list() {
         return restTemplate.getForObject(REST_URL_PREFIX + "/dept/list",List.class);
     }

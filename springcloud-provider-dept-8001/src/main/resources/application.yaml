@@ -21,3 +21,21 @@ spring:
     url: jdbc:mysql://localhost:3306/spring_cloud_d01?useUnicode=true&characterEncoding=utf-8&useSSL=false
     username: root
     password: nihao2019
+
+# Eureka的配置,配置服务注册到哪里
+eureka:
+  client:
+    service-url:
+      # 向单机发布
+      # defaultZone: http://localhost:7001/eureka
+      # 向集群发布
+      # eureka700*.com为服务器IP地址,在系统host文件中做了映射
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+  instance:
+    instance-id: springcloud-provider-8001  # 修改Eureka上默认的描述信息(Status)
+
+# info配置
+info:
+  app:
+    name: Spring Cloud
+  company.name: geekByte

@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>springcloud-eureka-8003</artifactId>
+    <artifactId>springcloud-eureka-7003</artifactId>
 
     <dependencies>
         <!--Euraka插件-->
@@ -26,5 +26,6 @@
             <artifactId>spring-boot-devtools</artifactId>
         </dependency>
     </dependencies>
+
 
 </project>
