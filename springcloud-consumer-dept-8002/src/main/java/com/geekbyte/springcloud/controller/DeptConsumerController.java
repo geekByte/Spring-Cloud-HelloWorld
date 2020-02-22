@@ -22,7 +22,7 @@ public class DeptConsumerController {
 
     private static final String REST_URL_PREFIX = "http://localhost:8001";
 
-    @PostMapping("/consumer/dept/add")
+    @RequestMapping("/consumer/dept/add")
     public Boolean addDept(Dept dept) {
         return restTemplate.postForObject(REST_URL_PREFIX + "/dept/add",dept,Boolean.class);
     }
@@ -32,7 +32,7 @@ public class DeptConsumerController {
         return restTemplate.getForObject(REST_URL_PREFIX + "/dept/get/" + id,Dept.class);
     }
 
-    @GetMapping("/consumer/list")
+    @RequestMapping("/consumer/list")
     public List<Dept> list() {
         return restTemplate.getForObject(REST_URL_PREFIX + "/dept/list",List.class);
     }
