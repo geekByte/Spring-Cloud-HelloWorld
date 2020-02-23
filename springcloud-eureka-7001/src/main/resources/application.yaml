@@ -3,7 +3,7 @@ server:
 
 eureka:
   instance:
-    hostname: localhost  # Eureka服务端的实例名称
+    hostname: eureka7001.com  # Eureka服务端的实例名称
   client:
     register-with-eureka: false  # 表示是否向服务中心注册自己
     fetch-registry: false  # 设置为false表示自己就是服务注册中心
