@@ -1,0 +1,27 @@
+server:
+  port: 9527
+
+spring:
+  application:
+    name: springcloud-zuul
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: zuul9527.com
+
+
+info:
+  app.name: geek-springcloud
+  company.name: geekbyte
+
+zuul:
+  routes:
+    mydept.serviceId: springcloud-provider-dept
+    mydept.path: /mydept/**
+#  ignored-services: springcloud-provider-dept  # 不能使用服务名称访问  http://www.geekbyte.com:9527/springcloud-provider-dept/dept/get/2 -->访问不可达
+  ignored-services: "*"  # 使所有的服务不能使用服务名访问
+  prefix: /byte   # 设置公共的访问前缀 http://www.geekbyte.com:9527/byte/mydept/dept/get/2
