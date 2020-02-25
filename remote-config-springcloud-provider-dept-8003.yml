@@ -2,6 +2,9 @@ spring:
   profiles:
     active: dev
 
+#远程配置文件测试
+#对应于springcloud-provider-dept-8003
+
 ---
 sppring:
   profiles: dev

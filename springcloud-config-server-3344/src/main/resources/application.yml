@@ -8,4 +8,4 @@ spring:
     config:
       server:
         git:
-          uri: # 是https的，不是git
+          uri: https://github.com/geekByte/Spring-Cloud-HelloWorld.git # 是https的，不是git
