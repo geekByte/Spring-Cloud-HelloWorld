@@ -22,7 +22,7 @@ public class DeptClientServiceFallbackFactory implements FallbackFactory {
 
             @Override
             public List<Dept> queryAll() {
-                List<Dept> list = new ArrayList<>();
+                List<Dept> list = new ArrayList<Dept>();
                 list.add(new Dept()
                         .setName("已经进行服务降级，暂时关闭服务")
                         .setDbSource("No Data"));

@@ -4,6 +4,9 @@ server:
 spring:
   application:
     name: springcloud-zuul
+#  cloud:
+#    gateway:
+#      enabled: true
 
 eureka:
   client:

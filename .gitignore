@@ -1,4 +1,4 @@
-.imi
-/target/
-/.idea/
-test/
+*.imi
+target/.*
+.idea/*.xml
+test/.*
